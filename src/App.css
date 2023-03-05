@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Lato', sans-serif;
+  background: #111111;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+input{
+  border: none;
+  outline: none;
+}
+
+section{
+  padding: 2rem 8rem;
+}
+.section-title{
+    font-size: 1.25rem;
+    color: #000000;
+    text-align: center;
+}
+.section-title h2{
+    font-weight: 400;
+}
+.section-title h2::before{
+    display: flex;
+    width: 200px;
+    height: 1px;
+    content: "";
+    background-color: #000000;
+    position: relative;
+    top: 1.25rem;
+    right: 13rem;
+    margin: auto;
+}
+
+.section-title h2::after{
+    display: flex;
+    width: 200px;
+    height: 1px;
+    content: "";
+    background-color: #000000;
+    position: relative;
+    bottom: 1.05rem;
+    left: 13rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .App{
+    width: 100%;
   }
 }

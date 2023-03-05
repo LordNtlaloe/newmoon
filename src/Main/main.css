@@ -1,0 +1,82 @@
+.main{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(255, 0, 0, 0.73)), url('../Assets/IMG-20230102-WA0007.jpg');
+  background-position: inherit;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.content{
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  background-position:inherit;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+}
+.content .text{
+  position: relative;
+  padding: 8rem 5rem;
+  text-align: left;
+  padding-bottom: 4rem;
+}
+.content .text h1{
+  font-size: 5rem;
+}
+.content .text p{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-right: 25rem;
+}
+.content .text .start-btn{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF0000;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .content .text h1{
+    font-size: 3.5rem;
+  }
+  .content .text p{
+    padding-right: 15rem;
+    font-size: 0.85rem;
+  }
+  .content .text .start-btn{
+    font-size: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .content .text h1{
+    font-size: 2.5rem;
+  }
+  .content .text p{
+    padding-right: 5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content .text h1{
+    font-size: 1.5rem;
+  }
+  .content .text p{
+    padding-right: 0rem;
+    font-size: 0.75rem;
+  }
+
+  .content .text{
+    padding: 4rem 2rem;
+  }
+}
+

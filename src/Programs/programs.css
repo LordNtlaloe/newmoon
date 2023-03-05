@@ -1,0 +1,225 @@
+.programs{
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 2rem 5rem;
+    overflow-y: hidden;
+}
+
+.programs .section-title{
+    font-size: 1.25rem;
+    color: #FF0000;
+    text-align: center;
+}
+
+.programs .section-title h2{
+    font-weight: 400;
+}
+
+.programs .section-title h2::before{
+    display: flex;
+    width: 200px;
+    height: 1px;
+    content: "";
+    background-color: #FF0000;
+    position: relative;
+    top: 1.25rem;
+    right: 13rem;
+    margin: auto;
+}
+
+.programs .section-title h2::after{
+    display: flex;
+    width: 200px;
+    height: 1px;
+    content: "";
+    background-color: #FF0000;
+    position: relative;
+    bottom: 1.05rem;
+    left: 13rem;
+    margin: auto;
+}
+
+.programs .content-grid {
+    display: block;
+}
+.programs .content-grid .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    height: 100%;
+}
+
+.programs .content-grid .content .info{
+    padding: 0.05rem;
+    background-color: #111111;
+}
+
+.programs .content-grid .content .info i{
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.programs .content-grid .content .info span{
+    color: #FF0000;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.programs .content-grid .content .info p{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #C5C6D0;
+}
+
+.programs .content-grid .content .info .about-btn{
+    color: #111111;
+    background: #FF0000;
+    margin-right: auto;
+    margin: 1rem ;
+    padding: 0.35rem 0.75rem;
+}
+
+
+.programs .content-grid .content .program-img{
+    width: 100%;
+    height: 100%;
+}
+
+.pricing{
+    height: 100%;
+}
+
+.pricing-intro{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.pricing-intro h3{
+    color: #FF0000;
+    font-size: 1.25rem;
+    
+}
+
+.prices-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.prices-grid .prices{
+    background: #111111;
+    box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.7);
+    border: solid 1px rgba(255, 0, 0, 0.2);
+}
+
+.prices-grid .prices:nth-child(even){
+    background: #000;
+}
+.prices-grid .prices h3{
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.prices-grid .prices p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.prices-grid .prices p span{
+    text-align: center;
+    color: #FF0000;
+    font-size: 1.4rem;
+}
+.prices-grid .prices ul{
+    padding-bottom: 1rem;
+}
+.prices-grid .prices li{
+    padding: 0.5rem 2rem;
+}
+
+.prices-grid .prices li i{
+    padding-right: 0.5rem;
+}
+
+.prices-grid .prices li .fa-check{
+    color: #00FF00;
+}
+
+.prices-grid .prices li .fa-circle-xmark{
+    color: #FF0000;
+}
+
+@media screen and (max-width: 1200px) {
+    .programs .content-grid .content .info{
+        padding: 1rem 0;
+        height: 100%;
+    }
+
+    .programs .content-grid .content .info i{
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    .programs .content-grid .content .info span{
+        margin: 0;
+    }
+    .programs .content-grid .content .info p{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 865px){
+
+    .programs .content-grid .content{
+        grid-template-columns: repeat(3, 235px);
+    }
+
+    .programs .content-grid .content .program-img{
+        width: 235px;
+        height: auto;
+    }
+    .programs .content-grid .content .info p{
+        display: none;
+    }
+    .programs .content-grid .content .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .programs .content-grid .content .info .about-btn{
+        font-size: 0.85rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .programs .content-grid .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .programs .content-grid .content .program-img{
+        width: 100%;
+        height: auto;
+    }
+    .programs .content-grid .content .info p{
+        display: block;
+        padding: 1rem 5rem;
+    }
+
+    .prices-grid{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .programs{
+        padding: 1rem 2rem;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,278 @@
+.testimonials{
+    padding: 2rem 5rem;
+    background: #000;
+    color: #FFFFFF;
+    overflow-y: hidden;
+}
+
+.testimonials .section-title{
+    color: #E00A0B;
+}
+
+.testimonials .section-title h2::before{
+    background-color: #E00A0B;
+}
+
+.testimonials .section-title h2::after{
+    background-color: #E00A0B;
+}
+
+
+.testimonial-content{
+    display: block;
+    justify-content: space-between;
+}
+
+.testimonial-content .text {
+    padding-bottom: 2rem;
+}
+
+.testimonial-content .text h3{
+    color: #E00A0B;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.testimonial-content .text .title{
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.testimonial-content .text p{
+    font-size: 0.85rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+    color: #5D5D5D;
+}
+
+.testimonial-content .text .testimonial-button{
+    background: #E00A0B;
+    margin-top: 2rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.testimonial-content .client-testimonials{
+    display: flex;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+.testimonial-content .client-testimonials .client{
+    display: block;
+}
+
+.testimonial-content .client-testimonials p{
+    font-size: 0.85rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0rem;
+    color: #5D5D5D;
+}
+
+.testimonial-content .client-testimonials .client .profile{
+    padding-top: 1rem;
+    display: flex;
+}
+
+.testimonial-content .client-testimonials .client .profile i{
+    position: relative;
+    bottom: 2rem;
+    font-size: 4rem;
+    color:#E00A0B;
+}
+.testimonial-content .client-testimonials .client .profile-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-content .client-testimonials .client .profile-info .profile-text{
+    padding-left: 1rem;
+}
+
+.testimonial-content .client-testimonials .comment-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.progress .text{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.progress .text h3{
+    color: #E00A0B;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.progress .text .title{
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.progress .transformations{
+    display: flex;
+    justify-content: space-around;
+}
+
+.progress .transformations .transformation{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.progress .transformations .transformation img{
+    width: 100%;
+    border: solid 1px rgba(255, 0, 0, 0.5);
+}
+
+.progress .transformations .transformation .before-title{
+    background-color: #E00A0B;
+    color: #FFFFFF;
+    padding: .5rem;
+    margin: auto;
+    position: relative;
+    top: 2.05rem;
+    width: 100px;
+    left: 4.75rem;
+    border-left: solid 1px rgba(255, 0, 0, 0.5);
+    border-top: solid 1px rgba(255, 0, 0, 0.5);
+}
+
+.progress .transformations .transformation .after-title{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: .5rem;
+    position: relative;
+    top: 2.05rem;
+    width: 100px;
+    left: 9.45rem;
+    border-left: solid 1px rgba(255, 0, 0, 0.5);
+    border-top: solid 1px rgba(255, 0, 0, 0.5);
+}
+
+.progress .transformations .transformation .tranformation-content{
+    text-align: left;
+    padding: 0.5rem;
+    position: relative;
+    background: #FF0000;
+    color: #FFFFFF;
+    bottom: 3.7rem;
+    border-left: solid 1px rgba(255, 0, 0, 0.5);
+    border-right: solid 1px rgba(255, 0, 0, 0.5);
+}
+
+.progress .transformations .transformation .tranformation-content h6{
+    font-size: 11.5px;
+}
+
+.progress .transformations .transformation .tranformation-content span{
+    color: #111111;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+    .progress .transformations{
+        gap: 1rem;
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+
+    .testimonial-content .client-testimonials p{
+        overflow-wrap: break-word;
+    }
+    .progress .transformations {
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .progress .transformations .transformation .before-title{
+        left: 3.3rem;
+    }
+
+    .progress .transformations .transformation .after-title{
+        left: 6.7rem;
+    }
+    
+}
+
+@media screen and (max-width: 990px){
+    .progress .transformations{
+        flex-direction: column;
+        gap: 0;
+    }
+     .progress .transformations .transformation{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .progress .transformations .transformation .before-title{
+        left: 4.65rem;
+        top: 2.1rem;
+    }
+
+    .progress .transformations .transformation .after-title{
+        left: 9.45rem;
+        top: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 865px){
+    .progress .transformations{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-y: hidden;
+    }
+     .progress .transformations .transformation{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .testimonials{
+        padding: 1rem 2rem;
+        overflow: hidden;
+    }
+    .progress .transformations{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+    }
+    .progress .transformations .transformation{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+    }
+    .progress .transformations .transformation .before-title{
+        left: 11.5rem;
+        top: 2.15rem;
+    }
+
+    .progress .transformations .transformation .after-title{
+        left: 24.45rem;
+        top: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .progress .transformations .transformation .before-title{
+        left: 6.3rem;
+        top: 2.15rem;
+    }
+
+    .progress .transformations .transformation .after-title{
+        left: 12.45rem;
+        top: 2.1rem;
+    }
+}

@@ -1,0 +1,59 @@
+.team{
+    padding: 2rem 5rem;
+    background: #E00A0B;
+    overflow-y: hidden;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+.team-info{
+    position: relative;
+    bottom: 3.75rem;
+    background: #000;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    height: 60px;
+}
+
+.team-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.team-info span{
+    color: #FF0000;
+    padding: 0.5rem 0;
+}
+
+.team-info p{
+    padding: 0.25rem 0;
+}
+
+.team-info .socials i{
+    padding-right: 1rem;
+}
+
+
+@media screen and (max-width: 865px) {
+    .team-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .team{
+        padding: 1rem 2rem;
+        overflow: hidden;
+    }
+    .team-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}

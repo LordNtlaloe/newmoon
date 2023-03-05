@@ -1,0 +1,63 @@
+.hero{
+    color:#FFFFFF;
+    background: url('../../src/Assets/IMG-20230102-WA0007.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed top;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.hero-content-span{
+    text-align: center;
+    padding: 3rem 8rem;
+    width: initial;
+    background:  rgba(0, 0, 0, 0.9);
+    height: 100%;
+}
+
+.hero-content-span span{
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #FF0000;
+}
+
+.hero-content-span h3{
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.hero-content-span p{
+    color: #5D5D5D;
+    padding: 0.5rem 15rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content-span a{
+    background-color: #FF0000;
+    width: 150px;
+    padding: 0.4rem 1.25rem;
+    margin-top: 1.5rem;
+} 
+
+@media screen and (max-width: 1024px) {
+    .hero-content-span p{
+        padding: 0.5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content-span p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-content-span{
+        padding: 1rem 2rem;
+    }
+}
