@@ -1,6 +1,9 @@
 import React from 'react';
-import './testimonials.css';
-import Carousel from 'react-grid-carousel';
+import {Swiper,SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Pagination} from "swiper";
+
 import profile1 from '../Assets/Profile01.jpg';
 import profile2 from '../Assets/Profile02.jpg';
 import profile3 from '../Assets/Profile03.jpg';
@@ -22,78 +25,67 @@ export default function Testimonials(){
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tenetur nesciunt quam ad ratione nulla alias veritatis maxime, illum sit rerum amet incidunt soluta hic!</p>
                     <a href="#" className="testimonial-button">Read More...</a>
                 </div>
-                <div className="client-testimonials">
-                    <Carousel cols={2} row={1} autoplay={3000} hideArrow={true} loop={true} responsiveLayout={[{breakpoint: 1366, cols: 2}, {breakpoint: 1024, cols: 1}]}>
-                        <Carousel.Item>
-                            <div className="client">
-                                <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
-                                <div className="profile">
-                                    <div className="profile-info">
-                                        <img src={profile1} alt="" className="comment-img" />
-                                        <div className="profile-text">
-                                            <h3>Mrs Someone</h3>
-                                            <p>Weight Loss Theraphy</p>
-                                        </div>
-                                    </div>
-                                    <div className="icon">
-                                        <i className="fa-solid fa-quote-left"></i>
-                                    </div>
+                <Swiper className="client-testimonials mySwiper" slidesPerView={1} loop={true} grabCursor={true} spaceBetween={24} pagination={{clickable: true}} breakpoints={{576: { slidesPerView: 1 }, 786: {slidesPerView: 2, spaceBetween: 48 }}} modules={[Pagination]}>
+                    <SwiperSlide className="client">
+                        <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
+                        <div className="profile">
+                            <div className="profile-info">
+                                <img src={profile1} alt="" className="comment-img" />
+                                <div className="profile-text">
+                                    <h3>Mrs Someone</h3>
+                                    <p>Weight Loss Theraphy</p>
                                 </div>
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="client">
-                                <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
-                                <div className="profile">
-                                    <div className="profile-info">
-                                        <img src={profile2} alt="" className="comment-img" />
-                                        <div className="profile-text">
-                                            <h3>Mrs Someone</h3>
-                                            <p>Weight Loss Theraphy</p>
-                                        </div>
-                                    </div>
-                                    <div className="icon">
-                                        <i className="fa-solid fa-quote-left"></i>
-                                    </div>
+                            <div className="icon">
+                                <i className="fa-solid fa-quote-left"></i>
+                            </div>
+                    </SwiperSlide>
+                    <SwiperSlide  className="client">
+                        <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
+                        <div className="profile">
+                            <div className="profile-info">
+                                <img src={profile2} alt="" className="comment-img" />
+                                <div className="profile-text">
+                                    <h3>Mrs Someone</h3>
+                                    <p>Weight Loss Theraphy</p>
                                 </div>
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="client">
-                                <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
-                                <div className="profile">
-                                    <div className="profile-info">
-                                        <img src={profile3} alt="" className="comment-img" />
-                                        <div className="profile-text">
-                                            <h3>Mrs Someone</h3>
-                                            <p>Weight Loss Theraphy</p>
-                                        </div>
-                                    </div>
-                                    <div className="icon">
-                                        <i className="fa-solid fa-quote-left"></i>
-                                    </div>
+                            <div className="icon">
+                                <i className="fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="client">
+                        <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
+                        <div className="profile">
+                            <div className="profile-info">
+                                <img src={profile3} alt="" className="comment-img" />
+                                <div className="profile-text">
+                                    <h3>Mrs Someone</h3>
+                                    <p>Weight Loss Theraphy</p>
                                 </div>
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="client">
-                                <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
-                                <div className="profile">
-                                    <div className="profile-info">
-                                        <img src={profile1} alt="" className="comment-img" />
-                                        <div className="profile-text">
-                                            <h3>Mrs Someone</h3>
-                                            <p>Weight Loss Theraphy</p>
-                                        </div>
-                                    </div>
-                                    <div className="icon">
-                                        <i className="fa-solid fa-quote-left"></i>
-                                    </div>
+                            <div className="icon">
+                                <i className="fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="client">
+                        <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
+                        <div className="profile">
+                            <div className="profile-info">
+                                <img src={profile1} alt="" className="comment-img" />
+                                <div className="profile-text">
+                                    <h3>Mrs Someone</h3>
+                                    <p>Weight Loss Theraphy</p>
                                 </div>
                             </div>
-                        </Carousel.Item>
-                    </Carousel>
-                </div>
+                            <div className="icon">
+                                <i className="fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className="progress">
                 <div className="text">
