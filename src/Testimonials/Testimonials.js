@@ -39,6 +39,7 @@ export default function Testimonials(){
                             <div className="icon">
                                 <i className="fa-solid fa-quote-left"></i>
                             </div>
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide  className="client">
                         <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
