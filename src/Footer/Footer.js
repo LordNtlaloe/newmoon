@@ -8,12 +8,24 @@ export default function Footer(){
                 <div className="links">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Features</li>
-                        <li>Pricing</li>
-                        <li>Team</li>
-                        <li>Contact</li>
+                        <li>
+                           <a href="#home">Home</a>
+                        </li>
+                        <li>
+                           <a href="#about">About</a>
+                        </li>
+                        <li>
+                           <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div className="hours">

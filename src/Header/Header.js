@@ -23,7 +23,7 @@ export default function Header(){
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="about" className="nav-link">
+                            <a href="#about" className="nav-link">
                                 <i className="uil uil-user nav-icon"></i>
                                 About
                             </a>
