@@ -133,7 +133,8 @@
 }
 
 .progress .transformations .transformation img{
-    width: 100%;
+    width: auto;
+    height: auto;
     border: solid 1px rgba(255, 0, 0, 0.5);
 }
 
@@ -182,7 +183,7 @@
     padding-left: 1rem;
 }
 
-@media screen and (max-width: 1200px){
+/* @media screen and (max-width: 1200px){
     .progress .transformations{
         gap: 1rem;
     }
@@ -196,9 +197,10 @@
     .progress .transformations {
         justify-content: space-evenly;
         padding-bottom: 2rem;
+        flex-shrink: inherit;
         margin: 0;
-        max-width: 100%;
-        width: 100%;
+        max-width: auto;
+        width: auto;
         padding: 0;
     }
 
@@ -213,14 +215,15 @@
 }
 
 @media screen and (max-width: 990px){
-    .progress .transformations{
+    /* .progress .transformations{
         flex-direction: column;
         gap: 0;
     }
      .progress .transformations .transformation{
         flex-direction: row;
+        flex-shrink: inherit;
         justify-content: space-evenly;
-    }
+    } 
 
     .progress .transformations .transformation .before-title{
         left: 4.65rem;
@@ -235,9 +238,8 @@
 
 @media screen and (max-width: 865px){
     .progress .transformations{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        overflow-y: hidden;
+        flex-wrap: wrap;
+        flex-shrink: 2;
     }
      .progress .transformations .transformation{
         flex-direction: row;
@@ -252,14 +254,13 @@
         overflow: hidden;
     }
     .progress .transformations{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        overflow: hidden;
+        flex: auto;
+        flex-wrap: wrap;
+        flex-shrink: inherit;
     }
     .progress .transformations .transformation{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        overflow: hidden;
+        flex-wrap: wrap;
+        flex-shrink: inherit;
     }
     .progress .transformations .transformation .before-title{
         left: 11.5rem;
@@ -282,4 +283,4 @@
         left: 12.45rem;
         top: 2.1rem;
     }
-}
+} */
