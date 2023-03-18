@@ -25,7 +25,7 @@ export default function Testimonials(){
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, tenetur nesciunt quam ad ratione nulla alias veritatis maxime, illum sit rerum amet incidunt soluta hic!</p>
                     <a href="#" className="testimonial-button">Read More...</a>
                 </div>
-                <Swiper className="client-testimonials mySwiper" autoplay={{ delay: 2000, disableOnInteraction: false}} slidesPerView={2} loop={true} grabCursor={true} spaceBetween={24} pagination={false} breakpoints={{786: {width: 786, slidesPerView: 2, spaceBetween: 48 }, 576: {width: 576, slidesPerView: 1 }}} modules={[Pagination, Autoplay]}>
+                <Swiper className="client-testimonials mySwiper" autoplay={{ delay: 2000, disableOnInteraction: false}} slidesPerView={2} loop={true} grabCursor={true} spaceBetween={24} pagination={false} breakpoints={{786: {width: 786, slidesPerView: 2, spaceBetween: 48 }, 576: {width: 576, slidesPerView: 1 }, 360: {width: 360, slidesPerView: 1 }}} modules={[Pagination, Autoplay]}>
                     <SwiperSlide className="client">
                         <p className="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam quasi impedit placeat doloribus consequuntur sapiente totam nisi ut assumenda, modi rem vitae quidem laudantium qui obcaecati maxime voluptatibus possimus.</p>
                         <div className="profile">
