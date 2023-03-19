@@ -88,7 +88,7 @@ export default function Testimonials(){
                     </SwiperSlide>
                 </Swiper>
             </div>
-            <div className="progress">
+            {/* <div className="progress">
                 <div className="text">
                     <h3>Progress</h3>
                     <p className="title">Our Client Transformations</p>
@@ -115,7 +115,7 @@ export default function Testimonials(){
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
