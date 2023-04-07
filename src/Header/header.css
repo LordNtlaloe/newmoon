@@ -87,7 +87,7 @@
         left: 0;
         width: 100%;
         background: #111111;
-        padding: 2rem 1.5rem 4rem;
+        padding: 0rem 1.5rem 0rem;
         box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
         transition: 0.3s;
     }
