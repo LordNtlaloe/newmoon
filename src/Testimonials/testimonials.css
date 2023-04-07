@@ -1,20 +1,27 @@
+.testimonials, .section{
+    background-color: #111111;
+}
+
 .testimonials .section-title h2{
     color: #FF0000;
+    
 }
 
 .testimonials-container {
     color: #F5F5F5;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.testimonials-card {
+.testimonials-card{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: inherit;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     border-radius: 1.5rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .testimonials-card .text{
@@ -48,12 +55,20 @@
     background-color: #FF0000 !important;
 }
 
+.swiper-slide{
+    
+}
+
 @media screen and (max-width: 992px) {
     .testimonials-container {
-        width: initial;
+        width: auto;
     }
 
     .testimonials-card {
+
         padding: 1.25rem 1.5rem;
     }
+}
+@media screen and (max-width: 992px) {
+
 }
